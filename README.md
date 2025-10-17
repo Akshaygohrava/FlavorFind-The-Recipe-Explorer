@@ -1,16 +1,49 @@
-# React + Vite
+FlavorFind 🍔 – Recipe Finder App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FlavorFind is a modern, responsive React frontend application that helps users discover delicious recipes from around the world. Built with React, React Router, Tailwind CSS, and Axios, this project focuses on clean UI, client-side routing, and real-world data fetching without any backend.
 
-Currently, two official plugins are available:
+🔹 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Home Page: Welcome page with app introduction.
 
-## React Compiler
+Search Recipes: Search for recipes by name or ingredient using a public API.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Recipe Details: View detailed recipe instructions, ingredients, and images.
 
-## Expanding the ESLint configuration
+Favorites: Save favorite recipes locally using localStorage.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Responsive Design: Fully mobile-friendly with Tailwind CSS.
+
+Client-side Routing: Navigate between pages with React Router.
+
+🔹 Tech Stack
+
+React – Component-based UI
+
+React Router DOM – Multi-page navigation
+
+Tailwind CSS – Modern styling and responsive layout
+
+Axios / Fetch API – Data fetching from public APIs
+
+LocalStorage – Save user’s favorite recipes
+
+🔹 Learning Outcomes
+
+Build a real-world frontend project with React.
+
+Implement dynamic routing with React Router.
+
+Fetch and display data from external APIs.
+
+Create reusable components and layouts using Tailwind CSS.
+
+Manage client-side state and persist favorites using localStorage.
+
+🔹 Optional Improvements
+
+Add filter by category or meal type
+
+Include pagination or infinite scroll for search results
+
+Add animations with Framer Motion for UI polish
