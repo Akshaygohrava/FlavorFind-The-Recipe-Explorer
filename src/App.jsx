@@ -1,20 +1,24 @@
-import { useState } from 'react'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Search from "./pages/Search";
+import RecipeDetails from "./pages/RecipeDetails";
+import Favorites from "./pages/Favorites";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-        <h1>Vite + React</h1>
-  
-        <button onClick={() => setCount(count + 1)}>
-          count is {count}
-        </button>
-      
-     
-    </>
-  )
+    <Router>
+      <div className="min-h-screen bg-gray-50">
+        <Navbar />
+        <div className="p-6">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/search" element={<Search />} />
+            <Route path="/recipe/:id" element={<RecipeDetails />} />
+            <Route path="/favorites" element={<Favorites />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
+  );
 }
-
-export default App
